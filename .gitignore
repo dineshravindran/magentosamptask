@@ -43,3 +43,12 @@
 /var/package/*
 !/var/package/*.xml
 
+/vendor/
+/generated/
+/var/
+/pub/static/*
+/pub/media/*
+.env
+.DS_Store
+*.log
+
