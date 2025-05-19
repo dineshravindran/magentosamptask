@@ -1,0 +1,12 @@
+<div class="widget block block-static-block">
+    <div class="content-heading">
+        <?php if (!$block->isCustomerLoggedIn()): ?>
+    <?php $savings = $block->getSavingsAmount(); ?>
+    <?php if ($savings > 0): ?>
+        
+           <strong>You could save $<?= number_format($savings, 2); ?> by creating an account or logging in!</strong>
+        
+    <?php endif; ?>
+<?php endif; ?>
+    </div>
+</div>
