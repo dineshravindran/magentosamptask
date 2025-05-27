@@ -4,7 +4,7 @@
     <?php $savings = $block->getSavingsAmount(); ?>
     <?php if ($savings > 0): ?>
         
-           <strong>You could save $<?= number_format($savings, 2); ?> by creating an account or logging in!</strong>
+           <strong>You could save <strong><?php echo $block->escapeHtml($block->getCurrencySymbol()) . number_format($savings, 2); ?></strong> by registering an account!</strong>
         
     <?php endif; ?>
 <?php endif; ?>
